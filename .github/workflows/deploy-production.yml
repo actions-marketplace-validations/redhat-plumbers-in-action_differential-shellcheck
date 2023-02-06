@@ -57,7 +57,7 @@ jobs:
 
       - name: Build Docker image - ${{ matrix.images.image-id }}
         if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile

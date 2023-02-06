@@ -64,7 +64,7 @@ jobs:
           env: ${{ matrix.config.deployment-environment-identifier }}
 
       - name: Build and Push Container
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           file: ${{ matrix.config.dockerfile }}
           tags: ${{ env.REGISTRY }}/${{ github.repository }}/${{ matrix.config.tag }}:latest
