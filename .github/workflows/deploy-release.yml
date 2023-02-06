@@ -70,7 +70,7 @@ jobs:
           env: ${{ matrix.images.deployment-environment-identifier }}
 
       - name: Build Docker image - ${{ matrix.images.image-id }}
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
