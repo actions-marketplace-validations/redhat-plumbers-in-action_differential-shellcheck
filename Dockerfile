@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-FROM fedora:42
+FROM fedora:43
 
 # --- Version Pinning --- #
 
